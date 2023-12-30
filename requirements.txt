@@ -1,0 +1,6 @@
+git+https://github.com/Broyojo/ImageBind.git
+fastapi[all]
+usearch
+pillow-heif
+psycopg2-binary
+icloudpd
