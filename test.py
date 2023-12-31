@@ -1,11 +1,5 @@
-import json
-import subprocess
+import geocoder
 
-# Run ffprobe command
-command = ['ffprobe', '-v', 'quiet', '-print_format', 'json', '-show_format', '-show_streams', "images/video.webm"]
-result = subprocess.run(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+g = geocoder.osm("Governor Livingston High School")
+print(g.latlng)
 
-# Parse the output to JSON
-metadata = json.loads(result.stdout)
-
-print(metadata)

@@ -4,3 +4,4 @@ usearch
 psycopg2-binary
 icloudpd
 python-magic
+geocoder
